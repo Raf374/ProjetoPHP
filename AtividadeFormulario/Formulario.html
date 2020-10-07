@@ -7,37 +7,38 @@
 </head>
     <body>
         <h3>O que você achou do site?</h3>
-        <form>
-            <input type="radio" name="opcao" value="mb">Muito bom
-            <input type="radio" name="opcao" value="b">Bom
-            <input type="radio" name="opcao" value="r">Regular
-            <input type="radio" name="opcao" value="l">Um lixo
+        <form  method="POST" action="request.php">
+                <input type="radio" name="nota" value="mb">Muito bom
+                <input type="radio" name="nota" value="b">Bom
+                <input type="radio" name="nota" value="r">Regular
+                <input type="radio" name="nota" value="l">Um lixo
+        
+            <h3>Qual a seção que você mais gostou?</h3>
+            <select name="opcaoa">
+                <option value="cartaz">Em cartaz</option>
+                <option value="som">Trilha sonora</option>
+                <option value="fotos">Galeria de fotos</option>
+                <option value="bilheteria">Bilheteria</option>
+                <option value="outra">Outra</option>
+            </select>
+            Outra:
+            <input type="text" name="outra" size="40">
+            <h3>Digite seus comentarios no espaço abaixo:</h3>
+            <textarea rows="4" cols="30" name="comentario" ></textarea>
+            <h3>Diga-nos como entrtar em contato com você:</h3>
+            <div>
+                Nome
+                <input type="text" name="nome" size="50"><br>
+                E-mail
+                <input type="text" name="email" size="50"><br>
+                Fone
+                <input type="text" name="fone" size="50"><br>
+                FAX
+                <input type="text" name="fax" size="50"><br>
+            </div>
+            <input type="checkbox" name="novidades">Quero saber as novidades do site por e-mail</br>
+            <button type="submit" name="dados">Enviar dados</button>
+            <button type="submit" name="limpar">Limpar Formulario</button>
         </form>
-        <h3>Qual a seção que você mais gostou?</h3>
-        <select name="opcao">
-            <option value="cartaz">Em cartaz</option>
-            <option value="som">Trilha sonora</option>
-            <option value="fotos">Galeria de fotos</option>
-            <option value="bilheteria">Bilheteria</option>
-            <option value="outra">Outra</option>
-        </select>
-        Outra:
-        <input type="text" name="outra" size="40">
-        <h3>Digite seus comentarios no espaço abaixo:</h3>
-        <textarea rows="4" cols="30" ></textarea>
-        <h3>Diga-nos como entrtar em contato com você:</h3>
-        <div>
-            Nome
-            <input type="text" name="nome" size="50"><br>
-            E-mail
-            <input type="text" name="email" size="50"><br>
-            Fone
-            <input type="text" name="fone" size="50"><br>
-            FAX
-            <input type="text" name="fax" size="50"><br>
-        </div>
-        <input type="checkbox" name="novidades">Quero saber as novidades do site por e-mail</br>
-        <button type="submit" name="dados">Enviar dados</button>
-        <button type="submit" name="limpar">Limpar Formulario</button>
     </body>
 </html>
