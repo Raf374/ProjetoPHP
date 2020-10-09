@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade04</title>
+    
+</head>
+    <body>
+        <h1 style="text-align: center;">Melhor som do underground</h1>
+        <form method="GET" action="atv04.php">
+            <table style="text-align: center; justify-content: center;">
+                <!--imagens-->
+                <tr>    
+                    <td><img src="imagens/Buda.png" alt="Sem sinal" width="250" height="250"></td>
+                    <td><img src="imagens/nikito.jpg" alt="Holy, holy, holy" width="250" height="250"></td>
+                    <td><img src="imagens/stef.jpg" alt="Danone" width="250" height="250"></td>
+                    <td><img src="imagens/zemaru.jpg" alt="Palitinho premiado" width="250" height="250"></td>
+                </tr>
+                <!--Nome música/artista-->
+                <tr style="border-left: 2rem; border-right: 2rem; text-align: center;">    
+                    <td><h3>Sem sinal - Yung Buda</h3></td>
+                    <td><h3>Holy, holy, holy - Nikito labrae</h3></td>
+                    <td><h3>Danone - Stef</h3></td>
+                    <td><h3>Palitinho premiado - Zemaru</h3></td>
+                </tr>
+                <!--Lugar de voto-->
+                <tr>
+                    <td><input type="radio" name="voto" value="buda">
+                    <td><input type="radio" name="voto" value="nikito">
+                    <td><input type="radio" name="voto" value="stef">
+                    <td><input type="radio" name="voto" value="zema">
+                </tr>
+                </table>
+                <br><br><br>
+                <button>Enviar resultado</button>
+            </form>
+    </body>
+</html>
